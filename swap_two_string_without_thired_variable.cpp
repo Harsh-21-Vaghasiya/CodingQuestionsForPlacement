@@ -15,9 +15,11 @@ int main()
     int length1 = str1.length();
     int length2 = str2.length();
 
-    str1 = str1 + str2;
-    str2 = str1.substr(0, length1);
-    str1=str1.substr(length1,length1+length2);
+    
+
+    // str1 = str1 + str2;
+    // str2 = str1.substr(0, length1);
+    // str1=str1.substr(length1,length1+length2);
 
              
 
