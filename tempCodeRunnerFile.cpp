@@ -1,5 +1,2 @@
-
-    // for (int i = 0; i < 6; i++)
-    // {
-    //     cin >> arr[i];
-    // }
+cout<<str2;
+    // str1 = str1.substr(str1.length());
