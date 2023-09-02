@@ -24,7 +24,7 @@ class remove_substring {
     String s2 = "har";
     String s3[];
 
-    int index = s1.indexOf(s2);
+    // int index = s1.indexOf(s2);
     s3 = s1.split(s2);
 
     System.out.println(s3[0] + s3[1]);
