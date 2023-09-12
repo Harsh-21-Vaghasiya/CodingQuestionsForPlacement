@@ -245,7 +245,7 @@
 
 //! How to convert Object in to array?
 
-let obj = { id: "1", name: "user22", age: "26", work: "programmer" };
-console.log(Object.keys(obj));
-console.log(Object.values(obj));
-console.log(Object.entries(obj));
+// let obj = { id: "1", name: "user22", age: "26", work: "programmer" };
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+// console.log(Object.entries(obj));

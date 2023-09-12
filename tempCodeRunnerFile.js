@@ -1,2 +1,4 @@
-a = str1.sort();
-    // b = str2.sort();
+let a = 0;
+let b = false;
+console.log((a == b));
+console.log((a === b));
