@@ -5,13 +5,12 @@
 using namespace std;
 string rev(string s)
 {
-    string s2="";
-    for (int i = s.size()-1; i >=0; i--)
+    string s2 = "";
+    for (int i = s.size() - 1; i >= 0; i--)
     {
-        s2+=s[i];
+        s2 += s[i];
     }
     return s2;
-    
 }
 
 int main()

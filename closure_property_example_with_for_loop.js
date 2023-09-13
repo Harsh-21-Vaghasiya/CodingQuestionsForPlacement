@@ -39,18 +39,60 @@
 // to print the diffrent value  using var variable we can use the set time out function in side the onother function 
 // so vale of each var is diffrent because of the function local block
 
-function a() {
-    for (var i = 0; i < 6; i++) {
-       function abc(i){
-            setTimeout(() => {
-                console.log(i);
-            }, i * 1000)
-        }
-        abc(i);
-        console.log("Hello harsh");
-    }
+// function a() {
+//     for (var i = 0; i < 6; i++) {
+//        function abc(i){
+//             setTimeout(() => {
+//                 console.log(i);
+//             }, i * 1000)
+//         }
+//         abc(i);
+//         console.log("Hello harsh");
+//     }
 
-    console.log("hello world");
+//     console.log("hello world");
+// }
+
+// a();
+
+// hear delete function delete property of object
+// var output = (function (x) {
+//     delete x;
+//         return x;
+//     }
+//     )(0);
+//     console.log(output);
+
+
+// The output would be undefined. The delete operator is used to delete the property of an object. 
+// Here, x is an object which has the property foo
+
+
+// var x = { foo: 1 };
+// var output = (function () {
+//     delete x.foo;
+//     return x.foo;
+// }
+// )();
+// console.log(output);
+
+
+
+// The output would be xyz. Here, emp1 object has company as its prototype property.
+//  The delete operator doesn’t delete prototype property.
+//  emp1 object doesn’t have company as its own property. 
+
+// var employee =
+// {
+//     company: 'xyz'
+// }
+// var emp1 = Object.create(employee);
+// delete emp1.company;
+// console.log(emp1.company);
+
+
+var b = function bar() {
+    return 7;
 }
-
-a();
+var x = 10;
+console.log(typeof (b));
