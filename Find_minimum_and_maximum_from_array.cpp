@@ -8,6 +8,7 @@ int main()
     int min=INT_MAX;
     int max=INT_MIN;
 
+
     for (int i = 0; i <sizeof(arr)/sizeof(arr[0]); i++)
     {
         if (arr[i]>max)

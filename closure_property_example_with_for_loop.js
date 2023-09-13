@@ -91,8 +91,8 @@
 // console.log(emp1.company);
 
 
-var b = function bar() {
-    return 7;
-}
-var x = 10;
-console.log(typeof (b));
+// var b = function bar() {
+//     return 7;
+// }
+// var x = 10;
+// console.log(typeof (b));
