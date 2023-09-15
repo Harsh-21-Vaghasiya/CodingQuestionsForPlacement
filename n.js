@@ -1,6 +1,8 @@
-var output = (function (x) {
-delete x;
-    return x;
+class RainForest {
+    static minimumRainFall = 60;
+
 }
-)(0);
-console.log(output);
+
+let congo = new RainForest(); 
+RainForest.minimumRainFall = 80; 
+console.log(congo.minimumRainFall);

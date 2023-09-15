@@ -249,3 +249,186 @@
 // console.log(Object.keys(obj));
 // console.log(Object.values(obj));
 // console.log(Object.entries(obj));
+
+
+
+//!  class and variables decalaration problem
+// class RainForest {
+//     static minimumRainFall = 60;
+// }
+// let congo = new RainForest();
+// RainForest.minimumRainFall = 80;
+// console.log(congo.minimumRainFall);
+
+//! scope Releted Problem
+// if (true) {
+//     var first = 'You';
+// }
+
+// function fScope() {
+//     var second = "got this"
+// }
+// fScope();
+// console.log(first);
+// console.log(second);
+
+
+//!Generator function
+// function* gener() {
+//     let i = 0;
+//     while (true) {
+
+//         yield i++;
+//     }
+// }
+
+// const gen = gener();
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+
+
+//!  array pop method
+
+// var pokedex = ["Snorlax", "Jigglypuff", "Charmander", "Squirtle"];
+// pokedex.pop();
+// console.log(pokedex.pop());
+
+
+//!
+// const x = 6 % 2
+// const y = x ? 'One' : 'Two';
+// console.log(y);
+
+
+//! passby value and passby reference
+// const dessert = { type: 'pie' }
+// dessert.type = 'pudding';
+// const seconds = dessert;
+// seconds.type = 'fruit';
+// console.log(dessert.type);
+
+
+// var a=5;
+// var b=a;
+// a=2;
+// console.log(a,b);
+
+//!  hear b.harsh=false;  ==   a.harsh=false;
+// var a = { harsh: true };
+// var b = a;
+// b.harsh = false;
+// console.log(a, b);
+
+// var a={harsh: true};
+// var b=a.harsh;
+// a.harsh=false;
+// console.log(a,b);
+
+//! Passby value and passby reference
+
+// let bear = {
+//     sound: "roar",
+//     roar() {
+//         console.log(this.sound);
+//     }
+// }
+// bear.sound = "grunt";
+// let bearSound = bear.roar;
+// bearSound();
+// console.log(bear);
+
+
+// ! operator presedence
+// let value1 = 2;
+// let value2 = 4;
+// value1*=value1 + value2 * value2 / value1;
+// value1 = value1 * (value1 + value2 * value2 / value1);
+// console.log(value1);
+
+
+// console.log(typeof(42.8));
+
+
+
+// var cat = { name: "Athena" };
+// function swap(feline) {
+//     feline.name = "wild";
+//     feline = { name: "Tabby" };
+// }
+// swap(cat);
+// console.log(cat.name);
+
+
+// class Animal {
+//     eat() { Animal.belly.push("food"); }
+//     static belly = [];
+// }
+// let a = new Animal();
+// a.eat();
+// console.log(Animal.belly[0]);
+
+
+// let cat = Object.create({ type: "lion" });
+// cat.size = "large";
+// console.log(cat);
+// let copyCat = { ...cat };
+// console.log(cat);
+// cat.type = "tiger";
+// console.log(cat);
+// console.log(copyCat.type, copyCat.size);
+
+
+// const numbers = [1, 2, 3, 4, 5];
+// const [ one, two, three, four, five ] = numbers;
+
+
+// let rainForestAcres = 10;
+// let animals = 0;
+// while (rainForestAcres < 13 || animals <= 2) {
+//     rainForestAcres++
+//     animals += 2;
+// }
+// console.log(animals);
+
+//! pass by value and pass by reference
+
+// const dessert = { type: 'pie' };
+// dessert.type = 'pudding';
+// const seconds = dessert;
+// seconds.type = 'fruit';
+// console.log(dessert.type);
+
+
+// var thing;
+// let func = (str = 'no arg') => {
+//     console.log(str);
+// }
+// func(thinf);
+// func(null);
+
+
+// const numbers = [1, 2, 3, 4, 5];
+// const decl=numbers.slice();
+// console.log(decl);
+
+// ! pass by value and pass by reference
+
+// let animals = [{ type: "lion" }, "tiger"];
+// let clones = animals.slice();
+// console.log(clones);
+// clones[0].type = "bear";
+// clones[1] = "sheep";
+// console.log(animals[0].type, clones[0].type);
+// console.log(animals[1], clones[1]);
+
+const obj = {
+    a: 1,
+    b: 2,
+    c: 3,
+};
+const obj2 = {
+    ...obj,
+    a: 0,
+};
+console.log(obj2);
+console.log(obj2.a, obj2.b);
