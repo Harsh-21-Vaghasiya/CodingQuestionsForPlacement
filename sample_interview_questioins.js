@@ -421,14 +421,34 @@
 // console.log(animals[0].type, clones[0].type);
 // console.log(animals[1], clones[1]);
 
-const obj = {
-    a: 1,
-    b: 2,
-    c: 3,
-};
-const obj2 = {
-    ...obj,
-    a: 0,
-};
-console.log(obj2);
-console.log(obj2.a, obj2.b);
+// const obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3,
+// };
+// const obj2 = {
+//     ...obj,
+//     a: 0,
+// };
+// console.log(obj2);
+// console.log(obj2.a, obj2.b);
+
+// class RainForest {
+//     static minimumRainFall = 60;
+
+// }
+
+// let congo = new RainForest(); 
+// RainForest.minimumRainFall = 80; 
+// console.log(congo.minimumRainFall);
+
+//! Scope releted question
+// var array = [1, 2, 3, 4, 5];
+
+// for (let index = 0; index < array.length; index++) {
+//     var ele = index
+//     const element = array[index];
+// }
+// console.log(index);
+// console.log(ele);
+
