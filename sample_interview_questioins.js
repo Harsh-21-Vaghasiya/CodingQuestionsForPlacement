@@ -452,3 +452,261 @@
 // console.log(index);
 // console.log(ele);
 
+//!  type of function
+
+// var a={};
+// console.log(typeof a === 'object');
+// console.log(typeof a == 'object');
+
+//! scope releted question
+
+// function ab() {
+//     let a = b = 3;
+// }ab();
+// console.log(b);
+// console.log(ab);
+// console.log("a defined? " + (typeof a !== 'undefined'));
+// console.log("b defined? " + (typeof b !== 'undefined'));
+
+//! scope releted question
+// var myObject = {
+//     foo: "bar",
+//     func: function () {
+//         var self = this;
+//         console.log("outer func:  this.foo = " + this.foo);
+//         console.log("outer func:  self.foo = " + self.foo);
+//         (function () {
+//             console.log("inner func:  this.foo = " + this.foo);
+//             console.log("inner func:  self.foo = " + self.foo);
+//         }());
+//     }
+// };
+// myObject.func();
+
+//!
+
+
+// function foo1() {
+//     return {
+//         bar: "hello"
+//     };
+// }
+// function foo2() {
+//     return
+//     {
+//         bar: "hello"
+//     };
+// }
+// console.log("foo1 returns:");
+// console.log(foo1());
+// console.log("foo2 returns:");
+// console.log(foo2());
+
+
+//!
+// console.log(0.1 + 0.2);
+// console.log(0.1 + 0.2 == 0.3);
+
+//! settimeout function
+// (function () {
+//     console.log(1);
+//     setTimeout(function () { console.log(2) }, 1000);
+//     setTimeout(function () { console.log(3) }, 0);
+//     console.log(4);
+// })();
+
+
+//! sum method which output like
+//! console.log(sum(2,3));   // Outputs 5
+//! console.log(sum(2)(3));  // Outputs 5
+
+// function sum(x, y) {
+//     if (y !== undefined) {
+//         return x + y;
+//     } else {
+//         return function (y) { return x + y; };
+//     }
+// }
+
+// var d = {};
+// var a = ['zebra', 'horse'].forEach(function (k) {
+//     d[k] = undefined;
+// });
+// console.log(d);
+
+// !  splice and scile method
+
+// var arr1 = "john".split('');
+// console.log(arr1.splice(0,1,'harsh'));
+// console.log(arr1);
+
+// console.log("arr1 " + arr1);
+// var arr2 = arr1.reverse();
+// console.log("arr2 " + arr1);
+// var arr3 = "jones".split('');
+// console.log("arr3 " + arr3);
+
+// arr2.push(arr3);
+// console.log("arr1 " + arr1);
+
+// console.log("arr2 " + arr2);
+// console.log("arr3 " + arr3);
+
+
+// console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+// console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+
+//! use of the + operator
+
+// console.log(1 + "2" + "2");
+// console.log(1 + +"2" + "2");
+// console.log(1 + -"1" + "2");
+// console.log(+"1" + "1" + "2");
+// console.log("A" - "B" + "2");
+// console.log("A" - "B" + 2);
+
+
+// !
+// var list = [1,2,3,4,5,6,7,8,9,10];
+
+// var nextListItem = function () {
+//     var item = list.pop();
+//     if (item) {
+//         console.log(item);
+//         nextListItem();
+//     }
+// };
+// nextListItem();
+
+//! clousure property example
+
+// var bc = 20;
+// function a() {
+//     var a = 10;
+//     console.log(bc);
+//     function b() {
+//         console.log(bc);
+//         console.log(a);
+//     }
+//     b();
+// }
+// a();
+
+// !
+
+// console.log("0 || 1 = " + (0 || 1));
+// console.log("1 || 2 = " + (1 || 2));
+// console.log("0 && 1 = " + (0 && 1));
+// console.log("1 && 2 = " + (1 && 2));
+
+// !
+// console.log(false == '0')
+// console.log(false === '0')
+
+// !
+// var a = {},
+//     b = { key: 'b' },
+//     c = { key: 'c' };
+// a[b] = 123;
+// a[c] = 456;
+// console.log(a[b]);
+
+// ! How to clone object
+
+// var obj = { a: 1, b: 2 }
+// var objclone = Object.assign({}, obj);
+
+// ! clouser properties
+
+// var b = 1;
+// function outer() {
+//     var b = 2
+//     function inner() {
+//         b++;
+//         var b = 3;
+//         console.log(b)
+//     }
+//     inner();
+// }
+// outer();
+//
+
+// !  console question
+// console.log(typeof typeof 1);
+// console.log(typeof undefined == typeof null);
+// console.log(typeof undefined == typeof NULL);
+
+//! Array Queation
+
+// var a = [1, 2, 3];
+// a[10] = 99;
+// console.log(a[6]);
+
+
+//! Add element at position first and last
+
+// var myArray = ['a', 'b', 'c', 'd'];
+// myArray.push('end');
+// myArray.unshift('start');
+// console.log(myArray);
+
+//! Pecedence of operator
+// console.log(1 < 2 < 3);  //true
+// console.log(3 > 2 > 1);  //false-> true>1->1>1 
+
+//! Scope variable
+
+// (function () {
+//     try {
+//         throw new Error();
+//     } catch (x) {
+//         var x = 1, y = 2;
+//         console.log(x);
+//     }
+//     console.log("ans "+x);
+//     console.log(y);
+// })();
+
+//! scope releted 
+// var length = 10;
+// function fn() {
+//     console.log(this.length);
+// }
+
+// var obj = {
+//     length: 5,
+//     method: function (fn) {
+//         fn();
+//         arguments[0]();
+//     }
+// };
+
+// obj.method(fn, 1);
+
+//! Scope releted
+
+// var hero = {
+//     _name: 'John Doe',
+//     getSecretIdentity: function () {
+//         return this._name;
+//     }
+// };
+
+// var stoleSecretIdentity = hero.getSecretIdentity;
+
+// console.log(stoleSecretIdentity());
+// console.log(hero.getSecretIdentity());
+
+//! scope releted
+
+// (function (x) {
+//     return (function (y) {
+//         console.log(x);
+//     })(2)
+// })(1);
+
+//!  Recersive function
+// console.log(
+//     (function f(n) {
+//         return ((n > 1) ? n * f(n - 1) : n)
+//     })(3));

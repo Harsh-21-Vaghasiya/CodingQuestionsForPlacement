@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for (var i = 0; i < 5; i++) {
+        //     var btn = document.createElement('button');
+        //     btn.appendChild(document.createTextNode('Button ' + i));
+        //     btn.addEventListener('click', function () { console.log(i); });
+        //     document.body.appendChild(btn);
+        // }
+
+        // for (var i = 0; i < 5; i++) {
+        //     setTimeout(() => {
+        //         alert(i);
+        //     }, 1000)
+        // }
+
+
+        function load(src, callback) {
+            var script = document.createElement("script");
+            script.src = src;
+            script.onload = function () {
+                console.log("script loaded Successfully");
+                callback(null, src)
+            }
+
+            script.onerror = function () {
+                callback(new Error("Could not load"))
+            }
+            document.head.appendChild(script);
+
+        }
+
+        //! callback hell
+
+        load("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js", function call(error, src) {
+
+            if (error) {
+                console.log("Error calling");
+                return;
+            }
+            load("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js", function call(error, src) {
+
+                if (error) {
+                    console.log("Error calling");
+                    return;
+                }
+                load("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js", function call(error, src) {
+
+                    if (error) {
+                        console.log("Error calling");
+                        return;
+                    }
+                    console.log("script loaded Successfully call1 : " + src);
+
+                })
+
+            })
+
+        })
+    </script>
+</body>
+
+</html>
