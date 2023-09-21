@@ -1,3 +1,4 @@
- b = "harsh";
-let c = animal.capi(b);
-console.log(c);
+ // function name(params) {
+        //     console.log(this);
+        // }
+        // name()
