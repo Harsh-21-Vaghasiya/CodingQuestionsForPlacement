@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="box1" id="id1"><span id="span1">Harsh</span></p>
+    <p class="box2" id="id2">harsh</p>
+
+
+    <script>
+        var a = document.getElementById("id1");
+        var b = document.getElementById("id2"); 
+
+// Cheak for the element is founded or not in css selecter
+        console.log(a.matches(".box1"));  
+        console.log(a.matches(".box2"));  
+
+        // CheAK FOR the closest element has the same or not
+
+        console.log(span1.closest(".box1"));
+
+
+        // Cheak for that element contains or not
+
+        console.log(a.contains(a));
+        console.log(a.contains(span1));
+    </script>
+</body>
+
+</html>
